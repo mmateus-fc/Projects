@@ -1,0 +1,24 @@
+------------------ GAME RESULTS ------------------
+
+  Adventurer name: mateus
+  Board: 1
+  Rounds: 1
+
+------------------ SCORE ------------------ 
+  Final Score: -6
+
+------------------ ELEMENTS FOUND ------------------ 
+  Animals: 1
+  Plants: 0
+  Traps: 0
+  Environments: 0
+
+------------------ Elements found list ------------------ 
+----- ANIMALS -----
+1: Deer
+
+----- PLANTS -----
+
+----- ENVIRONMENTS -----
+
+----- ENVIRONMENTS -----

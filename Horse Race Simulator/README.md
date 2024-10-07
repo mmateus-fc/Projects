@@ -13,3 +13,5 @@ Winning a race slightly increases a horse's confidence, while falling during a r
 ## HOW TO RUN ##
 
 Download the file RaceApp.jar and execute it.
+
+![horserace](https://github.com/user-attachments/assets/1e0818cd-b5f8-4b7c-96ab-d0eec01d9c13)

@@ -23,3 +23,4 @@ The next generation of cells is created by applying the following four rules to 
 
 To run the project locally, clone the repository.
 
+![gameoflife](https://github.com/user-attachments/assets/17eeb4fa-d106-408b-b86b-fd81c04b62b3)

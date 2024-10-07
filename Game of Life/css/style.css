@@ -1,0 +1,206 @@
+body{
+    height: 100vh; /* to set heights of each block */
+    overflow: hidden; /* Prevent scrolling */
+} 
+
+header {
+    position: relative; /* Set header as relative for absolute positioning of children */
+    margin: 1rem;
+    color: #F2E2A9; /* Set color */
+    font-size: 2rem;
+    height: 60px; /* Set a fixed height for the header */
+}
+
+header h1 {
+    position: absolute; /* Allow positioning with top/left */
+    left: 50%; /* Move to the center */
+    transform: translateX(-50%); /* Center it */
+    margin: 0; /* Remove default margin */
+}
+
+header button {
+    width: 3rem;
+    height: 3rem;
+    position: absolute; /* Position button absolutely */
+    right: 1rem; /* Align to the right */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+}
+
+.img-question {
+    width: 2rem;
+    height: 2rem;
+}
+.universe {
+    position: relative; /* Set parent as relative */
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+
+    gap: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background: white;
+    height: 80vh;
+}
+
+.gen {
+    position: absolute; /* Set child as absolute */
+    bottom: 0; /* Align to bottom */
+    right: 0; /* Align to right */
+    background-color: #f3eeda; /* Optional: background for visibility */
+    padding: 10px; /* Optional: padding for aesthetics */
+    font-size: 80%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.controlers {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.controlers button {
+    width: 5rem;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: auto; /* Adjusts width based on content */
+    min-width: 120px; /* Minimum width */
+    height: 25px;
+    background-color: #a38a30;
+    color: #fff;
+    text-align: center;
+    
+    /* Flexbox for alignment */
+    display: flex; 
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    border-radius: 6px;
+    padding: 0.5rem;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the button */
+    left: 50%; /* Center the tooltip */
+    transform: translateX(-50%); /* Adjust to center tooltip */
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.popup {
+    position: fixed; /* Fixed positioning */
+    top: 4rem; /* Distance from the top */
+    right: 4rem; /* Distance from the right */
+    background-color: #ece3c2; 
+    border-radius: 1rem;
+    padding: 0.5rem; 
+    border: 2px solid #af9a4c; 
+    z-index: 10; /* Ensure it's above other elements */
+    display: none; /* Initially hidden */
+    color: black;
+    font-size: 15px;
+
+    max-width: 20rem;
+}
+
+.closePopup {
+    top: 1.5rem; /* Space between text and button */
+    right: 0.5rem;
+
+    width: 1.5rem;
+    height: 1.5rem;
+
+    font-weight: 900;
+
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.question-title {
+    font-weight: 900;
+}
+
+.question-description {
+    text-align: justify;
+}
+
+button:hover {
+    background-color: #f0ebd8;
+}
+
+.speed-arrow-1 {
+    font-weight: 900;
+    background: #0000ff;
+    /* background: linear-gradient(90deg, #ff0000, #ff7300, #ffd800, #00ff00, #00ffff, #0000ff, #8000ff); */
+    /* background: linear-gradient(90deg, #0000ff, #00b947, #d6c90a, #e4970a, #d43606, #9907ee);  */
+    background-clip: text; /* Clip the background to the text */
+    -webkit-background-clip: text; /* For Safari */
+    color: transparent; /* Make the text color transparent to show the gradient */
+}
+
+.speed-arrow-2 {
+    font-weight: 900;
+    background: linear-gradient(90deg, #0000ff, #00b947); 
+    /* background: linear-gradient(90deg, #ff0000, #ff7300, #ffd800, #00ff00, #00ffff, #0000ff, #8000ff); */
+    /* background: linear-gradient(90deg, #0000ff, #00b947, #d6c90a, #e4970a, #d43606, #9907ee);  */
+    background-clip: text; /* Clip the background to the text */
+    -webkit-background-clip: text; /* For Safari */
+    color: transparent; /* Make the text color transparent to show the gradient */
+}
+
+.speed-arrow-3 {
+    font-weight: 900;
+    background: linear-gradient(90deg, #0000ff, #00b947, #d6c90a); 
+    /* background: linear-gradient(90deg, #ff0000, #ff7300, #ffd800, #00ff00, #00ffff, #0000ff, #8000ff); */
+    /* background: linear-gradient(90deg, #0000ff, #00b947, #d6c90a, #e4970a, #d43606, #9907ee);  */
+    background-clip: text; /* Clip the background to the text */
+    -webkit-background-clip: text; /* For Safari */
+    color: transparent; /* Make the text color transparent to show the gradient */
+}
+
+.speed-arrow-4 {
+    font-weight: 900;
+    background: linear-gradient(90deg, #0000ff, #00b947, #d6c90a, #e4970a); 
+    /* background: linear-gradient(90deg, #ff0000, #ff7300, #ffd800, #00ff00, #00ffff, #0000ff, #8000ff); */
+    /* background: linear-gradient(90deg, #0000ff, #00b947, #d6c90a, #e4970a, #d43606, #9907ee);  */
+    background-clip: text; /* Clip the background to the text */
+    -webkit-background-clip: text; /* For Safari */
+    color: transparent; /* Make the text color transparent to show the gradient */
+}
+
+.speed-arrow-5 {
+    font-weight: 900;
+    background: linear-gradient(90deg, #0000ff, #00b947, #d6c90a, #e4970a, #d43606); 
+    /* background: linear-gradient(90deg, #ff0000, #ff7300, #ffd800, #00ff00, #00ffff, #0000ff, #8000ff); */
+    /* background: linear-gradient(90deg, #0000ff, #00b947, #d6c90a, #e4970a, #d43606, #9907ee);  */
+    background-clip: text; /* Clip the background to the text */
+    -webkit-background-clip: text; /* For Safari */
+    color: transparent; /* Make the text color transparent to show the gradient */
+}
+
+.speed-arrow-6 {
+    font-weight: 900;
+    background: linear-gradient(90deg, #0000ff, #00b947, #d6c90a, #e4970a, #d43606, #9907ee); 
+    /* background: linear-gradient(90deg, #ff0000, #ff7300, #ffd800, #00ff00, #00ffff, #0000ff, #8000ff); */
+    /* background: linear-gradient(90deg, #0000ff, #00b947, #d6c90a, #e4970a, #d43606, #9907ee);  */
+    background-clip: text; /* Clip the background to the text */
+    -webkit-background-clip: text; /* For Safari */
+    color: transparent; /* Make the text color transparent to show the gradient */
+}
+

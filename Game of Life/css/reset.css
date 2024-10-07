@@ -1,0 +1,45 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+ul {
+    margin: 0; 
+    padding: 0;
+}
+
+table,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    /* 
+    border-collapse: 
+        This property specifies whether table borders should be collapsed into a single border or separated as distinct borders between cells.
+    
+        I) colappse: 
+            When set to collapse, adjacent table cells share borders and any space between them is removed. This results in a more compact layout with consistent border styles.
+        
+        II) Separate    
+            When set to separate, each cell has its own border, and any spacing defined by the border-spacing property is added between adjacent cells.
+    */
+    border-collapse: collapse;
+
+    /* 
+    border-spacing: 
+        This property sets the distance between the borders of adjacent table cells when border-collapse is set to separate.
+    
+        When set to 0, there is no space between adjacent cells. This means the borders of adjacent cells will touch each other, creating a seamless appearance.
+    */
+    border-spacing: 0;
+}
+
+a { /* setting a to have no pre-set values */
+    text-decoration: none;
+    color: inherit;
+}

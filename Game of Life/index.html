@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Life</title>
+
+    <!-- CSS -->
+    <link href = './css/reset.css' rel = 'stylesheet' type= 'text/css'>
+    <link href = './css/background.css' rel = 'stylesheet' type= 'text/css'>
+    <link href = './css/style.css' rel = 'stylesheet' type= 'text/css'>
+
+    <!-- JS -->
+    <script type="module" src="./js/loadPage.js" defer></script>
+    <script type="module" src="./js/buttons.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Game of Life</h1>
+        <button class="question" type="button">
+            <img src="../icons/question.svg" class="img-question" alt="Question Mark">
+        </button>
+        
+        <div id="popup" class="popup">
+            <p class="question-title">Conway’s Game of Life</p>
+            <br>
+            <p class="question-description">It consists of a grid of cells that can be either alive or dead. The state of each cell changes based on simple rules applied to its eight neighboring cells. Over successive generations, patterns emerge, leading to complex behaviors. The game is known for its ability to simulate a variety of phenomena, from simple organisms to intricate systems.</p>
+            <br>
+            <p  class="question-title">Rules</p>
+            <br>
+            <p class="question-description">
+                1) Any live cell with fewer than two live neighbours dies, as if by underpopulation.
+                <br>
+                2) Any live cell with two or three live neighbours lives on to the next generation.
+                <br>
+                3) Any live cell with more than three live neighbours dies, as if by overpopulation.
+                <br>
+                4) Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
+            </p>
+
+            <button class="closePopup" type="button">X</button>
+        </div>
+    </header>
+
+    <div class="universe">
+        <div class="gen">
+            <h1>Generation</h1>
+            <h2></h2>
+        </div>
+    </div>
+
+    <div class="controlers">
+        <button class="pop tooltip" type="button">
+            <span class="tooltiptext">Random Universe</span>
+            <img src="../icons/random.svg" class="dice">
+        </button>
+
+        <button class="velocity tooltip" type="button" state="1">
+            <span class="tooltiptext">Increase / Decrease Velocity</span>
+            <img src="../icons/speedometer.svg">
+            <h1 class="speed-arrow-1">></h1>
+        </button>
+
+        <button class="next tooltip" type="button">
+            <span class="tooltiptext">Next Generation</span>
+            <img src="../icons/next.svg">
+        </button>
+
+        <button class="reset tooltip" type="button">
+            <span class="tooltiptext">Reset Universe</span>
+            <img src="../icons/reset.svg">
+        </button>
+
+        <button class="start-stop tooltip" type="button" state="to-play">
+            <span class="tooltiptext">Start / Stop</span>
+            <img src="../icons/play.svg">
+        </button>
+    </div>
+</body>
+</html>

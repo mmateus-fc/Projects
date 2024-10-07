@@ -1,0 +1,9 @@
+body {
+    /* background-image: linear-gradient(to bottom, #cbdfbd, #acc5a3, #8eab89, #709271, #537a5a); */
+    /* background-image: linear-gradient(to bottom, #d4e09b, #b0c68a, #8ead7a, #6f936a, #537a5a); */
+    background-color: black;
+}
+
+.controlers img {
+    width: 2rem;
+}
